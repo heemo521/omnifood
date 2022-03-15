@@ -6,9 +6,15 @@ https://type-scale.com/
 
 - FONT WEIGHTS
 DEFAULT: 400
+MEDIUM: 500
+SEMI-BOLD: 600
+BOLD: 700
 
 - LINE HEIGHTS
 DEFAULT: 1
+SMALL: 1.05
+PARAGRAPH DEFAULT: 1.6
+
 
 - FONT FAMILY
 Fonts: https://fonts.google.com/
@@ -37,7 +43,15 @@ Face-imgs: https://www.uifaces.co/
 
 */
 /* 05 SHADOWS------------------------------------------------------------- */
-/* 06 BORDER-RADIUS------------------------------------------------------------- */
+
+
+
+
+/* 06 BORDER-RADIUS----------------------------------------------------------*/
+/* 
+DEFAULT: 9px
+
+*/
 /* 07 WHITESPACE------------------------------------------------------------- */
 /* 
 - SPACING SYSTEM (px)
@@ -105,8 +119,6 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
     background-color: #fdf2e9;
-    /* border: 3px solid #fff; */
-
     box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -129,6 +141,46 @@ body {
 
 .logo {
     height: 2.2rem;
+}
+
+/* *************************************************************** */
+/* NAVIGATION */
+/* *************************************************************** */
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 300ms;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #cf711f;
 }
 
 /* *************************************************************** */
